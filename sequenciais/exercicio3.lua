@@ -1,3 +1,4 @@
+-- Faça um Programa que peça dois números e imprima a soma.
 print("Me passe dois números:")
 io.write("O primeiro número:")
 local numero1 = io.read()

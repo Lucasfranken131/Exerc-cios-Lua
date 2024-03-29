@@ -1,3 +1,4 @@
+-- Faça um Programa que peça as 4 notas bimestrais e mostre a média.
 io.write("A nota do primeiro semestre: ")
 local nota1 = io.read()
 io.write("A nota do segundo semestre: ")
