@@ -9,3 +9,18 @@ conforme a tabela abaixo:
 - Sindicato ( 5%) : R$
 = Salário Liquido : R$
 --]]
+io.write("Insira quanto voce ganha por hora: ")
+local salario_hora = io.read("n")
+io.write("Insira quantas horas voce trabalha por dia: ")
+local horas = io.read("n")
+io.write("Insira quantos dias voce trabalha por semana: ")
+local dias = io.read("n")
+local salario_dia = salario_hora * horas
+local dias_trabalhados = dias * salario_dia
+local salario_bruto = dias_trabalhados * 4
+local imposto_renda = salario_bruto * 0.11
+local inss = salario_bruto * 0.08
+local imposto_sind = salario_bruto * 0.05
+local salario_liquido = salario_bruto - imposto_renda - inss - imposto_sind
+print("O seu salario bruto mensal e de: ".. salario_bruto)
+print("O seu salario liquido mensal e de: ".. salario_liquido)
