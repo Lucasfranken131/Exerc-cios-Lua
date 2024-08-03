@@ -18,7 +18,7 @@ function sort()
     return array   
 end
 
-array = sort();
+local array = sort();
 for i = 1, #array do
     io.write(array[i].. " ");
 end
